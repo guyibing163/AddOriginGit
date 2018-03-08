@@ -3,18 +3,17 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="TestWithJUnit">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="JUnitTestWithGit">
     <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="C:/Users/pc/eclipse/jee-oxygen/eclipse/"/>
-    <property name="junit.output.dir" value="junit"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/jee-oxygen/eclipse/"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
     <path id="JUnit 4.libraryclasspath">
-        <pathelement location="C:/Users/pc/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
-        <pathelement location="C:/Users/pc/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
     </path>
-    <path id="TestWithJUnit.classpath">
+    <path id="JUnitTestWithGit.classpath">
         <path refid="JUnit 4.libraryclasspath"/>
         <pathelement location="bin"/>
     </path>
@@ -22,13 +21,11 @@
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
-                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="test">
-                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -44,7 +41,7 @@
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <src path="test"/>
-            <classpath refid="TestWithJUnit.classpath"/>
+            <classpath refid="JUnitTestWithGit.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
@@ -60,90 +57,5 @@
     <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
-    </target>
-<<<<<<< HEAD
-    <target name="AllCalculatorTests">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.AllCalculatorTests" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="TestWithJUnit.classpath"/>
-        </junit>
-    </target>
-    <target name="CalculatorTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.CalculatorTest" todir="${junit.output.dir}"/>
-=======
-    <target name="SquareTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.SquareTest1" todir="${junit.output.dir}"/>
->>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
-            <jvmarg line="-ea"/>
-            <classpath refid="TestWithJUnit.classpath"/>
-        </junit>
-    </target>
-<<<<<<< HEAD
-    <target name="SquareTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.SquareTest1" todir="${junit.output.dir}"/>
-=======
-    <target name="SquareTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.SquareTest2" todir="${junit.output.dir}"/>
->>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
-            <jvmarg line="-ea"/>
-            <classpath refid="TestWithJUnit.classpath"/>
-        </junit>
-    </target>
-<<<<<<< HEAD
-    <target name="SquareTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.SquareTest2" todir="${junit.output.dir}"/>
-=======
-    <target name="CalculatorTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.CalculatorTest" todir="${junit.output.dir}"/>
->>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
-            <jvmarg line="-ea"/>
-            <classpath refid="TestWithJUnit.classpath"/>
-        </junit>
-    </target>
-<<<<<<< HEAD
-    <target name="test1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.test1" todir="${junit.output.dir}"/>
-=======
-    <target name="AllCalculatorTests">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.guyibing.util.AllCalculatorTests" todir="${junit.output.dir}"/>
->>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
-            <jvmarg line="-ea"/>
-            <classpath refid="TestWithJUnit.classpath"/>
-        </junit>
-    </target>
-    <target name="junitreport">
-        <junitreport todir="${junit.output.dir}">
-            <fileset dir="${junit.output.dir}">
-                <include name="TEST-*.xml"/>
-            </fileset>
-            <report format="frames" todir="${junit.output.dir}"/>
-        </junitreport>
     </target>
 </project>
