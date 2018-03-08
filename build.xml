@@ -61,7 +61,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="AllCalculatorTests (1)">
+    <target name="AllCalculatorTests">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -70,7 +70,7 @@
             <classpath refid="JUnitTestWithGit.classpath"/>
         </junit>
     </target>
-    <target name="CalculatorTest (1)">
+    <target name="CalculatorTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -88,7 +88,7 @@
             <classpath refid="JUnitTestWithGit.classpath"/>
         </junit>
     </target>
-    <target name="SquareTest2 (1)">
+    <target name="SquareTest2">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -97,7 +97,7 @@
             <classpath refid="JUnitTestWithGit.classpath"/>
         </junit>
     </target>
-    <target name="SquareTest1 (1)">
+    <target name="SquareTest1">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
