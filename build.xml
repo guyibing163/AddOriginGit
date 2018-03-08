@@ -6,6 +6,7 @@
               as the first entry and export the buildfile again. --><project basedir="." default="build" name="JUnitTestWithGit">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../eclipse/jee-oxygen/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
@@ -21,11 +22,13 @@
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
+                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="test">
+                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -57,5 +60,58 @@
     <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
+    </target>
+    <target name="AllCalculatorTests (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.AllCalculatorTests" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="JUnitTestWithGit.classpath"/>
+        </junit>
+    </target>
+    <target name="CalculatorTest (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.CalculatorTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="JUnitTestWithGit.classpath"/>
+        </junit>
+    </target>
+    <target name="SquareTest1.clearCalculator">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.SquareTest1" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="JUnitTestWithGit.classpath"/>
+        </junit>
+    </target>
+    <target name="SquareTest2 (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.SquareTest2" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="JUnitTestWithGit.classpath"/>
+        </junit>
+    </target>
+    <target name="SquareTest1 (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.SquareTest1" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="JUnitTestWithGit.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
     </target>
 </project>
