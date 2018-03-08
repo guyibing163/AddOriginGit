@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="6" hostname="pc-PC" name="com.guyibing.util.AllCalculatorTests" skipped="0" tests="10" time="0.055" timestamp="2018-03-05T02:42:08">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="os.name" value="Windows 7" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes" />
+    <property name="env.COMPUTERNAME" value="PC-PC" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="D:\guyibing\apache-ant-1.10.2" />
+    <property name="java.runtime.version" value="1.8.0_144-b01" />
+    <property name="env.appium_home" value="D:\Appium1_4_13_1" />
+    <property name="env.java_home" value="C:\Program Files\Java\jdk1.8.0_144" />
+    <property name="env.HOMEPATH" value="\Users\pc" />
+    <property name="user.name" value="pc" />
+    <property name="user.language" value="zh" />
+    <property name="env.windows_tracing_flags" value="3" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin" />
+    <property name="env.android_home" value="D:\Android\android-sdk" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.file.TestWithJUnit" value="D:\Users\pc\eclipse-workspace\TestWithJUnit\build.xml" />
+    <property name="ant.project.name" value="TestWithJUnit" />
+    <property name="java.version" value="1.8.0_144" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 94 Stepping 3, GenuineIntel" />
+    <property name="user.timezone" value="" />
+    <property name="env.asl.log" value="Destination=file" />
+    <property name="env.TEMP" value="C:\Users\pc\AppData\Local\Temp" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env.classpath" value="C:\Program Files\Java\jdk1.8.0_144\lib;C:\Program Files\Java\jdk1.8.0_144\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_144\lib\tools.jar;D:\appium\;" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed" />
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.8.0_144\bin\java.exe" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.jnu.encoding" value="GBK" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ant.file.type.TestWithJUnit" value="file" />
+    <property name="ECLIPSE_HOME" value="C:/Users/pc/eclipse/jee-oxygen/eclipse/" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre" />
+    <property name="env.PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\" />
+    <property name="env.APPDATA" value="C:\Users\pc\AppData\Roaming" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="env.windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="ant.file" value="D:\Users\pc\eclipse-workspace\TestWithJUnit\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="env.=ExitCode" value="00000000" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="env._USE_CLASSPATH" value="yes" />
+    <property name="env.=::" value="::\" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.144-b01" />
+    <property name="env.USERPROFILE" value="C:\Users\pc" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\guyibing\apache-ant-1.10.2\lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.TMP" value="C:\Users\pc\AppData\Local\Temp" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="ms936" />
+    <property name="user.script" value="" />
+    <property name="target" value="1.8" />
+    <property name="user.home" value="C:\Users\pc" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;C:\xampp\mysql\bin;D\xampp\php;C:\Program Files\Microsoft SQL Server\130\Tools\Bin\;C:\Program Files\dotnet\;D:\Program Files\Git\cmd;C:\Users\pc\AppData\Local\Programs\Python\Python36-32;D:\Android\android-sdk\platforms;D:\Android\android-sdk\tools;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jdk1.8.0_144\jre\bin;D:\Android\android-sdk\build-tools\25.0.3;D:\Android\android-sdk\platform-tools;D:\Appium1_4_13_1\node_modules\.bin;D:\Appium1_4_13_1;D:\appium\;D:\guyibing\apache-ant-1.10.2\bin;." />
+    <property name="env.NUMBER_OF_PROCESSORS" value="4" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.2 compiled on February 3 2018" />
+    <property name="java.class.path" value="C:\Users\pc\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar;C:\Users\pc\.p2\pool\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;D:\Users\pc\eclipse-workspace\TestWithJUnit\bin;D:\guyibing\apache-ant-1.10.2\lib\ant-launcher.jar;D:\guyibing\apache-ant-1.10.2\lib\ant.jar;D:\guyibing\apache-ant-1.10.2\lib\ant-junit.jar;D:\guyibing\apache-ant-1.10.2\lib\ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.guyibing.util.AllCalculatorTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\Users\pc\eclipse-workspace\TestWithJUnit\junit\TEST-com.guyibing.util.AllCalculatorTests.xml crashfile=D:\Users\pc\eclipse-workspace\TestWithJUnit\junitvmwatcher5801045397257163092.properties propsfile=D:\Users\pc\eclipse-workspace\TestWithJUnit\junit2981018499169403698.properties" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="env.LOGONSERVER" value="\\PC-PC" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="env.ANT_HOME" value="D:\guyibing\apache-ant-1.10.2" />
+    <property name="java.io.tmpdir" value="C:\Users\pc\AppData\Local\Temp\" />
+    <property name="env.PROCESSOR_REVISION" value="5e03" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="env.ANT_CMD_LINE_ARGS" value=" AllCalculatorTests" />
+    <property name="env.=D:" value="D:\Users\pc\eclipse-workspace\TestWithJUnit" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\Users\pc\eclipse-workspace\TestWithJUnit" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\pc\AppData\Local" />
+    <property name="env.FSHARPINSTALLDIR" value="C:\Program Files (x86)\Microsoft SDKs\F#\4.1\Framework\v4.0\" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="env.Path" value="C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;C:\xampp\mysql\bin;D\xampp\php;C:\Program Files\Microsoft SQL Server\130\Tools\Bin\;C:\Program Files\dotnet\;D:\Program Files\Git\cmd;C:\Users\pc\AppData\Local\Programs\Python\Python36-32;D:\Android\android-sdk\platforms;D:\Android\android-sdk\tools;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jdk1.8.0_144\jre\bin;D:\Android\android-sdk\build-tools\25.0.3;D:\Android\android-sdk\platform-tools;D:\Appium1_4_13_1\node_modules\.bin;D:\Appium1_4_13_1;D:\appium\;D:\guyibing\apache-ant-1.10.2\bin" />
+    <property name="basedir" value="D:\Users\pc\eclipse-workspace\TestWithJUnit" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="D:\guyibing\apache-ant-1.10.2\lib\ant.jar" />
+    <property name="env.USERNAME" value="pc" />
+    <property name="source" value="1.8" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="file.encoding" value="GBK" />
+    <property name="sun.stderr.encoding" value="ms936" />
+    <property name="env.USERDOMAIN" value="pc-PC" />
+    <property name="env.MSMPI_BIN" value="C:\Program Files\Microsoft MPI\Bin\" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="env.=C:" value="C:\Users\pc" />
+    <property name="ant.project.invoked-targets" value="AllCalculatorTests" />
+    <property name="env.VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+  </properties>
+  <testcase classname="com.guyibing.util.CalculatorTest" name="test1" time="0.001" />
+  <testcase classname="com.guyibing.util.CalculatorTest" name="test2" time="0.003">
+    <failure message="expected:&lt;6&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;6&gt; but was:&lt;2&gt;
+	at com.guyibing.util.CalculatorTest.test2(CalculatorTest.java:21)
+</failure>
+  </testcase>
+  <testcase classname="com.guyibing.util.CalculatorTest" name="test3" time="0.0" />
+  <testcase classname="com.guyibing.util.CalculatorTest" name="test4" time="0.0">
+    <failure message="expected:&lt;6&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;6&gt; but was:&lt;2&gt;
+	at com.guyibing.util.CalculatorTest.test4(CalculatorTest.java:37)
+</failure>
+  </testcase>
+  <testcase classname="com.guyibing.util.SquareTest1" name="square1" time="0.0" />
+  <testcase classname="com.guyibing.util.SquareTest1" name="square2" time="0.001">
+    <failure message="expected:&lt;0&gt; but was:&lt;4&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;0&gt; but was:&lt;4&gt;
+	at com.guyibing.util.SquareTest1.square2(SquareTest1.java:40)
+</failure>
+  </testcase>
+  <testcase classname="com.guyibing.util.SquareTest1" name="square3" time="0.001">
+    <failure message="expected:&lt;9&gt; but was:&lt;4&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;9&gt; but was:&lt;4&gt;
+	at com.guyibing.util.SquareTest1.square3(SquareTest1.java:49)
+</failure>
+  </testcase>
+  <testcase classname="com.guyibing.util.SquareTest2" name="square[0]" time="0.0" />
+  <testcase classname="com.guyibing.util.SquareTest2" name="square[1]" time="0.0">
+    <failure message="expected:&lt;1&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;0&gt;
+	at com.guyibing.util.SquareTest2.square(SquareTest2.java:59)
+</failure>
+  </testcase>
+  <testcase classname="com.guyibing.util.SquareTest2" name="square[2]" time="0.001">
+    <failure message="expected:&lt;98&gt; but was:&lt;9&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;98&gt; but was:&lt;9&gt;
+	at com.guyibing.util.SquareTest2.square(SquareTest2.java:59)
+</failure>
+  </testcase>
+  <system-out><![CDATA[6
+2
+8
+2
+4
+4
+4
+4,4
+1,0
+98,9
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
