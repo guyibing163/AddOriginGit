@@ -61,6 +61,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
+<<<<<<< HEAD
     <target name="AllCalculatorTests">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
@@ -75,33 +76,64 @@
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="com.guyibing.util.CalculatorTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="TestWithJUnit.classpath"/>
-        </junit>
-    </target>
+=======
     <target name="SquareTest1">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="com.guyibing.util.SquareTest1" todir="${junit.output.dir}"/>
+>>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
             <jvmarg line="-ea"/>
             <classpath refid="TestWithJUnit.classpath"/>
         </junit>
     </target>
+<<<<<<< HEAD
+    <target name="SquareTest1">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.SquareTest1" todir="${junit.output.dir}"/>
+=======
     <target name="SquareTest2">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="com.guyibing.util.SquareTest2" todir="${junit.output.dir}"/>
+>>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
             <jvmarg line="-ea"/>
             <classpath refid="TestWithJUnit.classpath"/>
         </junit>
     </target>
+<<<<<<< HEAD
+    <target name="SquareTest2">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.SquareTest2" todir="${junit.output.dir}"/>
+=======
+    <target name="CalculatorTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.CalculatorTest" todir="${junit.output.dir}"/>
+>>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
+            <jvmarg line="-ea"/>
+            <classpath refid="TestWithJUnit.classpath"/>
+        </junit>
+    </target>
+<<<<<<< HEAD
     <target name="test1">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="com.guyibing.util.test1" todir="${junit.output.dir}"/>
+=======
+    <target name="AllCalculatorTests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.guyibing.util.AllCalculatorTests" todir="${junit.output.dir}"/>
+>>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
             <jvmarg line="-ea"/>
             <classpath refid="TestWithJUnit.classpath"/>
         </junit>
