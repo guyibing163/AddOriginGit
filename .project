@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-<<<<<<< HEAD
-	<name>JUnitTestWithGit</name>
-=======
 	<name>TestWithJUnit</name>
->>>>>>> 989774d2fa60b7bf3e74cbccd085cbc811cc881e
 	<comment></comment>
 	<projects>
 	</projects>
