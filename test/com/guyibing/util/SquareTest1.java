@@ -16,8 +16,14 @@ public class SquareTest1{
 
 	@Before
 	public void clearCalculator(){
-
-        calculator.clear();
+		try
+		{
+			calculator.clear();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage().toString());
+		}
 
 	}
 
@@ -25,9 +31,16 @@ public class SquareTest1{
 
 	@Test
 	public void square1(){
-		int result = new Calculator().square(2);
-		System.out.println(result);
-        assertEquals(4, result);
+		try
+		{
+			int result = new Calculator().square(2);
+			System.out.println(result);
+			assertEquals(4, result);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage().toString());
+		}
 
 	}    
 
@@ -35,19 +48,62 @@ public class SquareTest1{
 
 	@Test   
 	public void square2(){
-		int result = new Calculator().square(2);
-        System.out.println(result);
-        assertEquals(4, result);
+		try
+		{
+			int result = new Calculator().square(2);
+        	System.out.println(result);
+        	assertEquals(4, result);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage().toString());
+		}
 
 	}
 
 
 	@Test   
 	public void square3(){
-		int result = new Calculator().square(2);
-	    System.out.println(result);
-        assertEquals(4, result);
+		try
+		{
+			int result = new Calculator().square(2);
+			System.out.println(result);
+			assertEquals(4, result);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage().toString());
+		}
+ 
+	}
+	
+	@Test   
+	public void add1(){
+		try
+		{
+			int result = new Calculator().add(2,2);
+			System.out.println(result);
+			assertEquals(4, result);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage().toString());
+		}
  
 	}
 
+	@Test   
+	public void multiply1(){
+		try
+		{
+			int result = new Calculator().multiply(2,2);
+			System.out.println(result);
+			assertEquals(4, result);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage().toString());
+		}
+ 
+	}
 }

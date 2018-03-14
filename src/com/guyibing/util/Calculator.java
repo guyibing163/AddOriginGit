@@ -2,27 +2,69 @@ package com.guyibing.util;
 
 public class Calculator {
     public int add(int a, int b){
-        return a + b;
+    	try
+    	{
+    		return a + b;
+    	}
+    	catch (Exception e)
+    	{
+    		return 0;
+    	}
     }
     
     public int subtract(int a, int b){
-        return a - b;
+    	try
+    	{
+    		return a - b;
+    	}
+    	catch (Exception e)
+    	{
+    		return 0;
+    	}
     }
     
     public int multiply(int a, int b){
-        return a * b;
+    	try
+    	{
+    		return a * b;
+    	}
+    	catch (Exception e)
+    	{
+    		return 0;
+    	}
     }
     
     public int divide(int a, int b){
-        return a / b;
+    	try
+    	{
+    		return a / b;
+    	}
+    	catch (Exception e)
+    	{
+    		return 0;
+    	}
     }
     
     public int square(int a){
-        return  a * a;
+    	try
+    	{
+    		return  a * a;
+    	}
+    	catch (Exception e)
+    	{
+    		return 0;
+    	}
     }
     
     public int clear(){
-        return 0;
+    	try
+    	{
+    		return 1;
+    	}
+    	catch (Exception e)
+    	{
+    		return 0;
+    	}
     }
 
 }
