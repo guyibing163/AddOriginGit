@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="pc-PC" name="com.guyibing.util.SquareTest1" skipped="0" tests="3" time="0.046" timestamp="2018-03-14T01:40:47">
+<testsuite errors="0" failures="0" hostname="pc-PC" name="com.guyibing.util.SquareTest1" skipped="0" tests="5" time="0.051" timestamp="2018-03-14T03:03:01">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -84,7 +84,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.2 compiled on February 3 2018" />
     <property name="java.class.path" value="C:\Users\pc\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar;C:\Users\pc\.p2\pool\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\pc\GIT\TestWithJUnit\bin;D:\guyibing\apache-ant-1.10.2\lib\ant-launcher.jar;D:\guyibing\apache-ant-1.10.2\lib\ant.jar;D:\guyibing\apache-ant-1.10.2\lib\ant-junit.jar;D:\guyibing\apache-ant-1.10.2\lib\ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.guyibing.util.SquareTest1 skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\pc\GIT\TestWithJUnit\junit\TEST-com.guyibing.util.SquareTest1.xml crashfile=C:\Users\pc\GIT\TestWithJUnit\junitvmwatcher238240815295525685.properties propsfile=C:\Users\pc\GIT\TestWithJUnit\junit2786812912569979771.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.guyibing.util.SquareTest1 skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\pc\GIT\TestWithJUnit\junit\TEST-com.guyibing.util.SquareTest1.xml crashfile=C:\Users\pc\GIT\TestWithJUnit\junitvmwatcher8308623937188257955.properties propsfile=C:\Users\pc\GIT\TestWithJUnit\junit91115890406695774.properties" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.type" value="file" />
     <property name="env.windir" value="C:\Windows" />
@@ -103,7 +103,7 @@
     <property name="env.SystemRoot" value="C:\Windows" />
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
     <property name="os.arch" value="amd64" />
-    <property name="env.ANT_CMD_LINE_ARGS" value=" CalculatorTest SquareTest1" />
+    <property name="env.ANT_CMD_LINE_ARGS" value=" SquareTest1" />
     <property name="ant.file.type.JUnitTestWithGit" value="file" />
     <property name="env.=D:" value="D:\" />
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
@@ -126,14 +126,18 @@
     <property name="env.MSMPI_BIN" value="C:\Program Files\Microsoft MPI\Bin\" />
     <property name="java.specification.version" value="1.8" />
     <property name="env.=C:" value="C:\Users\pc\GIT\TestWithJUnit" />
-    <property name="ant.project.invoked-targets" value="CalculatorTest,SquareTest1" />
+    <property name="ant.project.invoked-targets" value="SquareTest1" />
     <property name="env.VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\" />
     <property name="env.PROCESSOR_LEVEL" value="6" />
   </properties>
   <testcase classname="com.guyibing.util.SquareTest1" name="square1" time="0.001" />
   <testcase classname="com.guyibing.util.SquareTest1" name="square2" time="0.0" />
   <testcase classname="com.guyibing.util.SquareTest1" name="square3" time="0.0" />
+  <testcase classname="com.guyibing.util.SquareTest1" name="multiply1" time="0.0" />
+  <testcase classname="com.guyibing.util.SquareTest1" name="add1" time="0.0" />
   <system-out><![CDATA[4
+4
+4
 4
 4
 ]]></system-out>

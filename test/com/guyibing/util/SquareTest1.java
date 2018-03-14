@@ -27,7 +27,6 @@ public class SquareTest1{
 
 	}
 
- 
 
 	@Test
 	public void square1(){
